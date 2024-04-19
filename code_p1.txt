@@ -1,0 +1,24 @@
+import pandas as pd
+df=pd.read_csv("C:\python/cdt.txt", sep='\t')
+headers=["date", "time (in s)", "depth (in m)", "T (in degC)", "salinity (in psu)"]
+df.columns=headers
+print(df)
+
+chmod +x code_p1
+
+
+print(df)
+           date time (in s)  depth (in m)  T (in degC)  salinity (in psu)
+0    11/29/2008       06:52             6        28.98              35.21
+1    11/29/2008       06:52             7        28.99              35.21
+2    11/29/2008       06:52             8        28.96              35.21
+3    11/29/2008       06:52             9        28.99              35.21
+4    11/29/2008       06:52            10        28.99              35.21
+..          ...         ...           ...          ...                ...
+990  11/29/2008       06:52           996         6.13              34.85
+991  11/29/2008       06:52           997         6.13              34.85
+992  11/29/2008       06:52           998         6.12              34.85
+993  11/29/2008       06:52           999         6.12              34.85
+994  11/29/2008       06:52          1000         6.11              34.85
+
+[995 rows x 5 columns]
